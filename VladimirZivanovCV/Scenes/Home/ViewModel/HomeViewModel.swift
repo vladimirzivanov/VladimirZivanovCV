@@ -11,6 +11,8 @@ import RxSwift
 import RxCocoa
 import RxDataSources
 
+typealias ContactInfo = (phone: String, email: String)
+
 /// View model is injected into a view controller under a protocol.
 protocol HomeViewModelProtocol {
     /// Whether view should display a loading indicator
@@ -26,7 +28,7 @@ protocol HomeViewModelProtocol {
     var title: Observable<String?> { get }
 
     /// Candidate's contact info
-//    var contactInfo: Observable<ContactInfo?> { get }
+    var contactInfo: Observable<ContactInfo?> { get }
 
     /// Table view section models
     var sections: Observable<[HomeSectionModel]> { get }
@@ -34,11 +36,11 @@ protocol HomeViewModelProtocol {
     /// Load CV from server
     func getCV()
 
-//    /// Call candidate's phone number
-//    func callPhone()
-//
-//    /// Send email to the candidate
-//    func sendEmail()
+    /// Call candidate's phone number
+    func callPhone()
+
+    /// Send email to the candidate
+    func sendEmail()
 }
 
 final class HomeViewModel: HomeViewModelProtocol {
@@ -56,6 +58,13 @@ final class HomeViewModel: HomeViewModelProtocol {
 
     var title: Observable<String?> {
         return cvBehaviorRelay.map { $0?.title }
+    }
+
+    var contactInfo: Observable<ContactInfo?> {
+        return cvBehaviorRelay.map {
+            guard let contactInfo = $0 else { return nil }
+            return ContactInfo(phone: contactInfo.contactInfo.phone, email: contactInfo.contactInfo.email)
+        }
     }
 
     var sections: Observable<[HomeSectionModel]> {
@@ -85,4 +94,19 @@ final class HomeViewModel: HomeViewModelProtocol {
             .disposed(by: disposeBag)
     }
 
+    func callPhone() {
+        // note: doesn't work on a simulator
+        guard let phone = cvBehaviorRelay.value?.contactInfo.phone else { return }
+        if let url = URL(string: "tel://\(phone)") {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
+    }
+
+    func sendEmail() {
+        // note: doesn't work on a simulator
+        guard let email = cvBehaviorRelay.value?.contactInfo.email else { return }
+        if let url = URL(string: "mailto:\(email)") {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
+    }
 }

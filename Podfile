@@ -10,7 +10,7 @@ target 'VladimirZivanovCV' do
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'RxDataSources'
-  pod 'Alamofire', '~> 5.0.0-beta.5'
-#  pod 'AlamofireImage'
+  pod 'Alamofire', '~> 5.0.0-beta.6'
+  pod 'AlamofireImage', '~> 4.0.0-beta.3'
 
 end

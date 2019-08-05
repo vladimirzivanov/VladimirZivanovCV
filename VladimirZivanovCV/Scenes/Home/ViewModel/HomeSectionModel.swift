@@ -11,9 +11,9 @@ import RxDataSources
 
 /// Represents possible table view cell types.
 enum HomeCellModelType {
-//    case summary(String)
-//    case skill(title: String, skills: [String])
-//    case company(CompanyCellModel)
+    case summary(String)
+    case skill(SkillCellViewModel)
+    case company(CompanyCellViewModel)
     case education(EducationCellViewModel)
 }
 

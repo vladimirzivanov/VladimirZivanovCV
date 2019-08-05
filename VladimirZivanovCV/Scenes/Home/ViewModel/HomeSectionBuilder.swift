@@ -14,12 +14,25 @@ struct HomeSectionBuilder {
     func makeSections() -> [HomeSectionModel] {
         var sections: [HomeSectionModel] = []
 
-//        let summarySection = CVSectionModel(items: [.summary(model.summary)])
-//        sections.append(summarySection)
-//        sections.append(makeSkillsSection())
-//        sections.append(makeExperienceSection())
+        let summarySection = HomeSectionModel(items: [.summary(model.summary)])
+        sections.append(summarySection)
+        sections.append(makeSkillsSection())
+        sections.append(makeExperienceSection())
         sections.append(makeEducationSection())
         return sections
+    }
+
+    private func makeSkillsSection() -> HomeSectionModel {
+        var items: [HomeCellModelType] = []
+        items.append(.skill(SkillCellViewModel(title: Strings.areaOfExpertise, skills: model.skills.areaOfExpertise)))
+        items.append(.skill(SkillCellViewModel(title: Strings.toolsAndTechnologies, skills: model.skills.toolsAndTechnologies)))
+        items.append(.skill(SkillCellViewModel(title: Strings.other, skills: model.skills.other)))
+        return HomeSectionModel(items: items, headerTitle: Strings.skillSectionTitle)
+    }
+
+    private func makeExperienceSection() -> HomeSectionModel {
+        let items = model.workExperience.map { HomeCellModelType.company(CompanyCellViewModel(company: $0)) }
+        return HomeSectionModel(items: items, headerTitle: Strings.workExperienceSectionTitle)
     }
 
     private func makeEducationSection() -> HomeSectionModel {

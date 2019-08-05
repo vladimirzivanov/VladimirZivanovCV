@@ -32,10 +32,9 @@ final class HomeViewController: UIViewController, StoryboardInitializable {
 
 }
 
-
 private extension HomeViewController {
     func setupBindings() {
-//        setupContactInfoBindings()
+        setupContactInfoBindings()
         setupHeaderBindings()
         setupTableViewBindings()
 
@@ -45,6 +44,28 @@ private extension HomeViewController {
 
 //        viewModel.isLoading.bind(to: rx.showsActivityView)
 //            .disposed(by: disposeBag)
+    }
+
+    func setupContactInfoBindings() {
+        viewModel.contactInfo
+            .map { $0 != nil }
+            .bind(to: phoneButtonItem.rx.isEnabled)
+            .disposed(by: disposeBag)
+
+        viewModel.contactInfo
+            .map { $0 != nil }
+            .bind(to: mailButtonItem.rx.isEnabled)
+            .disposed(by: disposeBag)
+
+        phoneButtonItem.rx.tap
+            .subscribe(onNext: { [weak self] in
+                self?.viewModel.callPhone()
+            }).disposed(by: disposeBag)
+
+        mailButtonItem.rx.tap
+            .subscribe(onNext: { [weak self] in
+                self?.viewModel.sendEmail()
+            }).disposed(by: disposeBag)
     }
 
     func setupHeaderBindings() {
@@ -91,18 +112,18 @@ private extension HomeViewController {
 private extension UITableView {
     func dequeueCell(forType type: HomeCellModelType) -> UITableViewCell {
         switch type {
-//        case .summary(let summary):
-//            let cell = dequeueReusableCell(className: CVSummaryTableViewCell.self)
-//            cell.summary = summary
-//            return cell
-//        case .skill(let title, let skills):
-//            let cell = dequeueReusableCell(className: CVSkillTableViewCell.self)
-//            cell.populate(withTitle: title, skills: skills)
-//            return cell
-//        case .company(let company):
-//            let cell = dequeueReusableCell(className: CVCompanyTableViewCell.self)
-//            cell.populate(withModel: company)
-//            return cell
+        case .summary(let summary):
+            let cell = dequeueReusableCell(className: SummaryTableViewCell.self)
+            cell.bind(summary)
+            return cell
+        case .skill(let skillViewModel):
+            let cell = dequeueReusableCell(className: SkillTableViewCell.self)
+            cell.bind(skillViewModel)
+            return cell
+        case .company(let companyViewModel):
+            let cell = dequeueReusableCell(className: CompanyTableViewCell.self)
+            cell.bind(companyViewModel)
+            return cell
         case .education(let educationCellViewModel):
             let cell = dequeueReusableCell(className: EducationTableViewCell.self)
             cell.bind(educationCellViewModel)
