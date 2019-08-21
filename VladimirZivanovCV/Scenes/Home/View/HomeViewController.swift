@@ -49,12 +49,12 @@ private extension HomeViewController {
     func setupContactInfoBindings() {
         viewModel.contactInfo
             .map { $0 != nil }
-            .bind(to: phoneButtonItem.rx.isEnabled)
+            .drive(phoneButtonItem.rx.isEnabled)
             .disposed(by: disposeBag)
 
         viewModel.contactInfo
             .map { $0 != nil }
-            .bind(to: mailButtonItem.rx.isEnabled)
+            .drive(mailButtonItem.rx.isEnabled)
             .disposed(by: disposeBag)
 
         phoneButtonItem.rx.tap
@@ -70,11 +70,11 @@ private extension HomeViewController {
 
     func setupHeaderBindings() {
         viewModel.name
-            .bind(to: headerView.nameLabel.rx.text)
+            .drive(headerView.nameLabel.rx.text)
             .disposed(by: disposeBag)
 
         viewModel.title
-            .bind(to: headerView.titleLabel.rx.text)
+            .drive(headerView.titleLabel.rx.text)
             .disposed(by: disposeBag)
     }
 
@@ -92,7 +92,7 @@ private extension HomeViewController {
             return dataSource.sectionModels[index].headerTitle?.uppercased()
         })
         viewModel.sections
-            .bind(to: tableView.rx.items(dataSource: dataSource))
+            .drive(tableView.rx.items(dataSource: dataSource))
             .disposed(by: disposeBag)
     }
 }

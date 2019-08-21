@@ -17,13 +17,13 @@ struct DecodableResponse<Model: Decodable> {
 }
 
 extension Session {
-    // generic method which can be used in future for any GET request
     func makeObservable<Model: Decodable>(withURL url: URLConvertible, jsonDecoder: JSONDecoder) -> Observable<DecodableResponse<Model>> {
         return Observable.create { [weak self] observer in
             guard let self = self else {
                 observer.onCompleted()
                 return Disposables.create()
             }
+
             self.request(url)
                 .validate(statusCode: 200..<300)
                 .responseData { response in

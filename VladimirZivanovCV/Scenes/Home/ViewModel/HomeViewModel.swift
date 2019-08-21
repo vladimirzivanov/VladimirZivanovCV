@@ -22,16 +22,16 @@ protocol HomeViewModelProtocol {
     var apiError: PublishSubject<Void> { get }
 
     /// Candidate's name
-    var name: Observable<String?> { get }
+    var name: Driver<String?> { get }
 
     /// Candidate's job title
-    var title: Observable<String?> { get }
+    var title: Driver<String?> { get }
 
     /// Candidate's contact info
-    var contactInfo: Observable<ContactInfo?> { get }
+    var contactInfo: Driver<ContactInfo?> { get }
 
     /// Table view section models
-    var sections: Observable<[HomeSectionModel]> { get }
+    var sections: Driver<[HomeSectionModel]> { get }
 
     /// Load CV from server
     func getCV()
@@ -52,25 +52,26 @@ final class HomeViewModel: HomeViewModelProtocol {
 
     let apiError = PublishSubject<Void>()
 
-    var name: Observable<String?> {
-        return cvBehaviorRelay.map { $0?.name }
+    var name: Driver<String?> {
+        return cvBehaviorRelay.map { $0?.name }.asDriver(onErrorJustReturn: nil)
     }
 
-    var title: Observable<String?> {
-        return cvBehaviorRelay.map { $0?.title }
+    var title: Driver<String?> {
+        return cvBehaviorRelay.map { $0?.title }.asDriver(onErrorJustReturn: nil)
     }
 
-    var contactInfo: Observable<ContactInfo?> {
+    var contactInfo: Driver<ContactInfo?> {
         return cvBehaviorRelay.map {
             guard let contactInfo = $0 else { return nil }
             return ContactInfo(phone: contactInfo.contactInfo.phone, email: contactInfo.contactInfo.email)
-        }
+        }.asDriver(onErrorJustReturn: nil)
     }
 
-    var sections: Observable<[HomeSectionModel]> {
+    var sections: Driver<[HomeSectionModel]> {
         return cvBehaviorRelay
             .compactMap { $0 }
             .map { HomeSectionBuilder(model: $0).makeSections() }
+            .asDriver(onErrorJustReturn: [])
     }
 
     init(service: CVServiceProtocol) {

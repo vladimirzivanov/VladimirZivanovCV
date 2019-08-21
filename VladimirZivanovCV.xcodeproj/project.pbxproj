@@ -25,6 +25,7 @@
 		2234C32922F3279D00FB3DD2 /* HomeTableViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2234C32822F3279D00FB3DD2 /* HomeTableViewCells.swift */; };
 		2234C32B22F327C500FB3DD2 /* HomeTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2234C32A22F327C500FB3DD2 /* HomeTableHeaderView.swift */; };
 		2234C32D22F3321800FB3DD2 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2234C32C22F3321800FB3DD2 /* ApplicationCoordinator.swift */; };
+		2298715C230D6E9100671DDF /* APIRequestRetrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2298715B230D6E9100671DDF /* APIRequestRetrier.swift */; };
 		F391B145029D31B0E8A4B8EE /* Pods_VladimirZivanovCV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E13A6DF3E2B6843B9C3F30D0 /* Pods_VladimirZivanovCV.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		2234C32822F3279D00FB3DD2 /* HomeTableViewCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCells.swift; sourceTree = "<group>"; };
 		2234C32A22F327C500FB3DD2 /* HomeTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableHeaderView.swift; sourceTree = "<group>"; };
 		2234C32C22F3321800FB3DD2 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		2298715B230D6E9100671DDF /* APIRequestRetrier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestRetrier.swift; sourceTree = "<group>"; };
 		6C625D94302BF493C16016B0 /* Pods-VladimirZivanovCV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VladimirZivanovCV.release.xcconfig"; path = "Target Support Files/Pods-VladimirZivanovCV/Pods-VladimirZivanovCV.release.xcconfig"; sourceTree = "<group>"; };
 		C3CFCBC0484BAB9E1269D9BF /* Pods-VladimirZivanovCV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VladimirZivanovCV.debug.xcconfig"; path = "Target Support Files/Pods-VladimirZivanovCV/Pods-VladimirZivanovCV.debug.xcconfig"; sourceTree = "<group>"; };
 		E13A6DF3E2B6843B9C3F30D0 /* Pods_VladimirZivanovCV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VladimirZivanovCV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,7 +101,6 @@
 				2234C30922F301B400FB3DD2 /* AppDelegate.swift */,
 				2234C32C22F3321800FB3DD2 /* ApplicationCoordinator.swift */,
 				221DAD3122F444640007A19A /* Strings.swift */,
-				2234C31522F301B700FB3DD2 /* Info.plist */,
 				2234C31C22F323AC00FB3DD2 /* Model */,
 				2234C31E22F323E100FB3DD2 /* Networking */,
 				2234C31B22F3239600FB3DD2 /* Scenes */,
@@ -128,6 +129,7 @@
 		2234C31D22F323BF00FB3DD2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2234C31522F301B700FB3DD2 /* Info.plist */,
 				2234C31022F301B700FB3DD2 /* Assets.xcassets */,
 				2234C31222F301B700FB3DD2 /* LaunchScreen.storyboard */,
 			);
@@ -139,6 +141,7 @@
 			children = (
 				221DAD2A22F4242F0007A19A /* CVService.swift */,
 				221DAD2C22F424F20007A19A /* SessionManager+Observable.swift */,
+				2298715B230D6E9100671DDF /* APIRequestRetrier.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 			files = (
 				2234C32922F3279D00FB3DD2 /* HomeTableViewCells.swift in Sources */,
 				221DAD3222F444640007A19A /* Strings.swift in Sources */,
+				2298715C230D6E9100671DDF /* APIRequestRetrier.swift in Sources */,
 				221DAD2922F4137B0007A19A /* StoryboardInitializable.swift in Sources */,
 				2234C30A22F301B400FB3DD2 /* AppDelegate.swift in Sources */,
 				2234C32122F324F900FB3DD2 /* HomeViewController.swift in Sources */,

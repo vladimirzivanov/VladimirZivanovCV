@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Title-->
+        <!--CV-->
         <scene sceneID="taL-eE-xQ3">
             <objects>
                 <viewController storyboardIdentifier="HomeViewController" id="uuR-sH-Zuw" customClass="HomeViewController" customModule="VladimirZivanovCV" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Azj-PB-q6q">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="P7Q-zB-KTa" customClass="HomeTableHeaderView" customModule="VladimirZivanovCV" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
@@ -221,13 +221,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Azj-PB-q6q" firstAttribute="top" secondItem="TDS-Qx-SKb" secondAttribute="top" id="3UU-8D-k3M"/>
-                            <constraint firstItem="TDS-Qx-SKb" firstAttribute="bottom" secondItem="Azj-PB-q6q" secondAttribute="bottom" id="W04-cd-ZzS"/>
+                            <constraint firstAttribute="bottom" secondItem="Azj-PB-q6q" secondAttribute="bottom" id="W04-cd-ZzS"/>
                             <constraint firstItem="TDS-Qx-SKb" firstAttribute="trailing" secondItem="Azj-PB-q6q" secondAttribute="trailing" id="Xg9-ht-B2v"/>
                             <constraint firstItem="Azj-PB-q6q" firstAttribute="leading" secondItem="TDS-Qx-SKb" secondAttribute="leading" id="qPd-AO-uDu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TDS-Qx-SKb"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="NZz-v5-hRp">
+                    <navigationItem key="navigationItem" title="CV" id="NZz-v5-hRp">
                         <rightBarButtonItems>
                             <barButtonItem title="Item" image="phone" id="cfI-r7-dhR"/>
                             <barButtonItem title="Item" image="mail" id="bA2-5X-ELr"/>

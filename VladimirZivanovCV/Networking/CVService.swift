@@ -25,8 +25,7 @@ struct CVService: CVServiceProtocol {
     private let session: Session
 
     private static func makeDefaultSession() -> Session {
-        let session = Session()
-//        sessionManager.retrier = APIRequestRetrier()
+        let session = Session(interceptor: APIRequestRetrier())
         return session
     }
 
