@@ -104,8 +104,8 @@
 				2234C31C22F323AC00FB3DD2 /* Model */,
 				2234C31E22F323E100FB3DD2 /* Networking */,
 				2234C31B22F3239600FB3DD2 /* Scenes */,
-				2234C31D22F323BF00FB3DD2 /* Resources */,
 				221DAD2722F4135C0007A19A /* Helpers */,
+				2234C31D22F323BF00FB3DD2 /* Resources */,
 			);
 			path = VladimirZivanovCV;
 			sourceTree = "<group>";

@@ -18,6 +18,7 @@ struct CVModel: Decodable {
         case workExperience = "work_experience"
         case education
     }
+
     let name: String
     let title: String
     let summary: String
@@ -36,6 +37,7 @@ extension CVModel {
             case schoolName = "school_name"
             case city
         }
+
         let specialty: String
         let startYear: Int
         let endYear: Int
@@ -56,6 +58,7 @@ extension CVModel {
             case toolsAndTechnologies = "tools_and_technologies"
             case other
         }
+
         let areaOfExpertise: [String]
         let toolsAndTechnologies: [String]
         let other: [String]
@@ -70,6 +73,7 @@ extension CVModel {
             case role
             case accomplishments
         }
+        
         let companyName: String
         let companyLogo: String?
         let startDate: String
