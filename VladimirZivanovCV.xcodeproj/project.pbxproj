@@ -33,7 +33,7 @@
 		2214608F23A048FC005AFD60 /* correct_cv.json in Resources */ = {isa = PBXBuildFile; fileRef = 2214608B23A048FC005AFD60 /* correct_cv.json */; };
 		2214609D23A05035005AFD60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2214609C23A05035005AFD60 /* Assets.xcassets */; };
 		2214609E23A050A8005AFD60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2214605523A04848005AFD60 /* Main.storyboard */; };
-		221460C423A051C2005AFD60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 221460C223A051C2005AFD60 /* LaunchScreen.storyboard */; };
+		221460C623A0533D005AFD60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 221460C523A0533D005AFD60 /* LaunchScreen.storyboard */; };
 		221DAD3222F444640007A19A /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221DAD3122F444640007A19A /* Strings.swift */; };
 		2234C30A22F301B400FB3DD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2234C30922F301B400FB3DD2 /* AppDelegate.swift */; };
 		2234C32D22F3321800FB3DD2 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2234C32C22F3321800FB3DD2 /* ApplicationCoordinator.swift */; };
@@ -80,7 +80,7 @@
 		2214608B23A048FC005AFD60 /* correct_cv.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = correct_cv.json; sourceTree = "<group>"; };
 		2214609C23A05035005AFD60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = VladimirZivanovCV/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		2214609F23A050CB005AFD60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = VladimirZivanovCV/Info.plist; sourceTree = SOURCE_ROOT; };
-		221460C323A051C2005AFD60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../../vladimirzivanov/Vlada/Vlada/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		221460C523A0533D005AFD60 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = VladimirZivanovCV/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		221DAD3122F444640007A19A /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		2234C30622F301B400FB3DD2 /* VladimirZivanovCV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VladimirZivanovCV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2234C30922F301B400FB3DD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -193,9 +193,9 @@
 		2214605D23A04848005AFD60 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				221460C223A051C2005AFD60 /* LaunchScreen.storyboard */,
 				2214609F23A050CB005AFD60 /* Info.plist */,
 				2214609C23A05035005AFD60 /* Assets.xcassets */,
+				221460C523A0533D005AFD60 /* LaunchScreen.storyboard */,
 			);
 			name = Resources;
 			path = ../../../VladimirZivanovCV/VladimirZivanovCV/Resources;
@@ -373,7 +373,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				221460C423A051C2005AFD60 /* LaunchScreen.storyboard in Resources */,
+				221460C623A0533D005AFD60 /* LaunchScreen.storyboard in Resources */,
 				2214609D23A05035005AFD60 /* Assets.xcassets in Resources */,
 				2214609E23A050A8005AFD60 /* Main.storyboard in Resources */,
 			);
@@ -472,17 +472,6 @@
 			targetProxy = 2214608123A048EB005AFD60 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		221460C223A051C2005AFD60 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				221460C323A051C2005AFD60 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2214608423A048EB005AFD60 /* Debug */ = {
