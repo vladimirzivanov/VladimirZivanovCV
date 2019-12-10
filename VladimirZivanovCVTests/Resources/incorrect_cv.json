@@ -1,0 +1,23 @@
+{
+    "name": "Vladimir Živanov",
+    "title": "iOS Developer",
+    "imageUrl": "https://raw.githubusercontent.com/vladimirzivanov/VladimirZivanovCV/master/0.jpeg",
+    "summary": "Test summary!",
+    "contact_info": {
+        "address": "Branka Radičevića 1",
+        "city": "Begeč",
+        "phone": "+381645368517",
+        "email": "vrza88@gmail.com"
+    },
+    "skills": {
+        "area_of_expertise": [
+            "iOS Development"
+        ],
+        "tools_and_technologies": [
+            "Swift"
+        ],
+        "other": [
+            "MVC/MVVM/MVP"
+        ]
+    }
+}

@@ -30,11 +30,25 @@
 		2214607523A04848005AFD60 /* CVModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2214605C23A04848005AFD60 /* CVModel.swift */; };
 		2214607623A04848005AFD60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2214605E23A04848005AFD60 /* Assets.xcassets */; };
 		2214607723A04848005AFD60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2214605F23A04848005AFD60 /* LaunchScreen.storyboard */; };
+		2214608C23A048FC005AFD60 /* EducationItemViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2214608623A048FC005AFD60 /* EducationItemViewModelTests.swift */; };
+		2214608D23A048FC005AFD60 /* DataFromJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2214608823A048FC005AFD60 /* DataFromJSON.swift */; };
+		2214608E23A048FC005AFD60 /* incorrect_cv.json in Resources */ = {isa = PBXBuildFile; fileRef = 2214608A23A048FC005AFD60 /* incorrect_cv.json */; };
+		2214608F23A048FC005AFD60 /* correct_cv.json in Resources */ = {isa = PBXBuildFile; fileRef = 2214608B23A048FC005AFD60 /* correct_cv.json */; };
 		221DAD3222F444640007A19A /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221DAD3122F444640007A19A /* Strings.swift */; };
 		2234C30A22F301B400FB3DD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2234C30922F301B400FB3DD2 /* AppDelegate.swift */; };
 		2234C32D22F3321800FB3DD2 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2234C32C22F3321800FB3DD2 /* ApplicationCoordinator.swift */; };
 		F391B145029D31B0E8A4B8EE /* Pods_VladimirZivanovCV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E13A6DF3E2B6843B9C3F30D0 /* Pods_VladimirZivanovCV.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2214608123A048EB005AFD60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2234C2FE22F301B400FB3DD2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2234C30522F301B400FB3DD2;
+			remoteInfo = VladimirZivanovCV;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2214604123A04848005AFD60 /* StoryboardInitializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardInitializable.swift; sourceTree = "<group>"; };
@@ -60,6 +74,12 @@
 		2214605C23A04848005AFD60 /* CVModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVModel.swift; sourceTree = "<group>"; };
 		2214605E23A04848005AFD60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2214606023A04848005AFD60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2214607C23A048EB005AFD60 /* VladimirZivanovCVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VladimirZivanovCVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2214608023A048EB005AFD60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2214608623A048FC005AFD60 /* EducationItemViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EducationItemViewModelTests.swift; sourceTree = "<group>"; };
+		2214608823A048FC005AFD60 /* DataFromJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataFromJSON.swift; sourceTree = "<group>"; };
+		2214608A23A048FC005AFD60 /* incorrect_cv.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = incorrect_cv.json; sourceTree = "<group>"; };
+		2214608B23A048FC005AFD60 /* correct_cv.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = correct_cv.json; sourceTree = "<group>"; };
 		221DAD3122F444640007A19A /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		2234C30622F301B400FB3DD2 /* VladimirZivanovCV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VladimirZivanovCV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2234C30922F301B400FB3DD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +90,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2214607923A048EB005AFD60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2234C30322F301B400FB3DD2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -172,10 +199,39 @@
 			path = ../../../VladimirZivanovCV/VladimirZivanovCV/Resources;
 			sourceTree = "<group>";
 		};
+		2214607D23A048EB005AFD60 /* VladimirZivanovCVTests */ = {
+			isa = PBXGroup;
+			children = (
+				2214608623A048FC005AFD60 /* EducationItemViewModelTests.swift */,
+				2214608723A048FC005AFD60 /* Helpers */,
+				2214608923A048FC005AFD60 /* Resources */,
+				2214608023A048EB005AFD60 /* Info.plist */,
+			);
+			path = VladimirZivanovCVTests;
+			sourceTree = "<group>";
+		};
+		2214608723A048FC005AFD60 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2214608823A048FC005AFD60 /* DataFromJSON.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2214608923A048FC005AFD60 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2214608A23A048FC005AFD60 /* incorrect_cv.json */,
+				2214608B23A048FC005AFD60 /* correct_cv.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		2234C2FD22F301B400FB3DD2 = {
 			isa = PBXGroup;
 			children = (
 				2234C30822F301B400FB3DD2 /* VladimirZivanovCV */,
+				2214607D23A048EB005AFD60 /* VladimirZivanovCVTests */,
 				2234C30722F301B400FB3DD2 /* Products */,
 				783E41F942C62C7DC9505104 /* Pods */,
 				C31603CCEA9619FDCE830FFF /* Frameworks */,
@@ -186,6 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				2234C30622F301B400FB3DD2 /* VladimirZivanovCV.app */,
+				2214607C23A048EB005AFD60 /* VladimirZivanovCVTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -225,6 +282,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2214607B23A048EB005AFD60 /* VladimirZivanovCVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2214608323A048EB005AFD60 /* Build configuration list for PBXNativeTarget "VladimirZivanovCVTests" */;
+			buildPhases = (
+				2214607823A048EB005AFD60 /* Sources */,
+				2214607923A048EB005AFD60 /* Frameworks */,
+				2214607A23A048EB005AFD60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2214608223A048EB005AFD60 /* PBXTargetDependency */,
+			);
+			name = VladimirZivanovCVTests;
+			productName = VladimirZivanovCVTests;
+			productReference = 2214607C23A048EB005AFD60 /* VladimirZivanovCVTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		2234C30522F301B400FB3DD2 /* VladimirZivanovCV */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2234C31822F301B700FB3DD2 /* Build configuration list for PBXNativeTarget "VladimirZivanovCV" */;
@@ -250,10 +325,14 @@
 		2234C2FE22F301B400FB3DD2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1030;
+				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "Vladimir Zivanov";
 				TargetAttributes = {
+					2214607B23A048EB005AFD60 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 2234C30522F301B400FB3DD2;
+					};
 					2234C30522F301B400FB3DD2 = {
 						CreatedOnToolsVersion = 10.3;
 					};
@@ -273,11 +352,21 @@
 			projectRoot = "";
 			targets = (
 				2234C30522F301B400FB3DD2 /* VladimirZivanovCV */,
+				2214607B23A048EB005AFD60 /* VladimirZivanovCVTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2214607A23A048EB005AFD60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2214608E23A048FC005AFD60 /* incorrect_cv.json in Resources */,
+				2214608F23A048FC005AFD60 /* correct_cv.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2234C30422F301B400FB3DD2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -333,6 +422,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2214607823A048EB005AFD60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2214608C23A048FC005AFD60 /* EducationItemViewModelTests.swift in Sources */,
+				2214608D23A048FC005AFD60 /* DataFromJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2234C30222F301B400FB3DD2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -365,6 +463,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		2214608223A048EB005AFD60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2234C30522F301B400FB3DD2 /* VladimirZivanovCV */;
+			targetProxy = 2214608123A048EB005AFD60 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		2214605F23A04848005AFD60 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -377,6 +483,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2214608423A048EB005AFD60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K67CP6Q448;
+				INFOPLIST_FILE = VladimirZivanovCVTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Medopad.VladimirZivanovCVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VladimirZivanovCV.app/VladimirZivanovCV";
+			};
+			name = Debug;
+		};
+		2214608523A048EB005AFD60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K67CP6Q448;
+				INFOPLIST_FILE = VladimirZivanovCVTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Medopad.VladimirZivanovCVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VladimirZivanovCV.app/VladimirZivanovCV";
+			};
+			name = Release;
+		};
 		2234C31622F301B700FB3DD2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -536,6 +684,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2214608323A048EB005AFD60 /* Build configuration list for PBXNativeTarget "VladimirZivanovCVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2214608423A048EB005AFD60 /* Debug */,
+				2214608523A048EB005AFD60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2234C30122F301B400FB3DD2 /* Build configuration list for PBXProject "VladimirZivanovCV" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

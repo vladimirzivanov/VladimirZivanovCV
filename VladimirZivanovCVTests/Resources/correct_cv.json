@@ -1,0 +1,59 @@
+{
+    "name": "Vladimir Živanov",
+    "title": "iOS Developer",
+    "imageUrl": "https://raw.githubusercontent.com/vladimirzivanov/VladimirZivanovCV/master/0.jpeg",
+    "summary": "Test summary!",
+    "contact_info": {
+        "address": "Branka Radičevića 1",
+        "city": "Begeč",
+        "phone": "+381645368517",
+        "email": "vrza88@gmail.com"
+    },
+    "skills": {
+        "area_of_expertise": [
+            "iOS Development"
+        ],
+        "tools_and_technologies": [
+            "Swift"
+        ],
+        "other": [
+            "MVC/MVVM/MVP"
+        ]
+    },
+    "work_experience": [
+        {
+            "company_name": "Vega IT Sourcing",
+            "company_logo": "https://www.vegaitsourcing.rs/media/3045/vega-logo.png",
+            "start_date": "Aug 2017",
+            "end_date": "Present",
+            "role": "iOS Developer",
+            "accomplishments": [
+            ]
+        },
+        {
+            "company_name": "Execom",
+            "company_logo": "https://vojvodinaictcluster.org/wp-content/uploads/2013/10/Execom-logo-red-600x252.png",
+            "start_date": "Dec 2016",
+            "end_date": "Jul 2017",
+            "role": "Mobile Developer",
+            "accomplishments": [
+            ]
+        }
+    ],
+    "education": [
+        {
+            "specialty": "Bachelor in Electrical and Computer Engineering",
+            "start_year": 2007,
+            "end_year": 2012,
+            "school_name": "University of Novi Sad, Faculty of Technical Sciences",
+            "city": "Novi Sad"
+        },
+        {
+            "specialty": "Computer Science",
+            "start_year": 2003,
+            "end_year": 2007,
+            "school_name": "Electrotechnical School Mihajlo Pupin",
+            "city": "Novi Sad"
+        }
+    ]
+}
