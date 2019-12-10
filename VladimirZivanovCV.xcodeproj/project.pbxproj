@@ -3,14 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2214603F23A045C5005AFD60 /* CVModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2214603E23A045C5005AFD60 /* CVModel.swift */; };
 		221DAD2922F4137B0007A19A /* StoryboardInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221DAD2822F4137B0007A19A /* StoryboardInitializable.swift */; };
 		221DAD2B22F4242F0007A19A /* CVService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221DAD2A22F4242F0007A19A /* CVService.swift */; };
 		221DAD2D22F424F20007A19A /* SessionManager+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221DAD2C22F424F20007A19A /* SessionManager+Observable.swift */; };
-		221DAD2F22F42DDF0007A19A /* CVModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221DAD2E22F42DDF0007A19A /* CVModel.swift */; };
 		221DAD3222F444640007A19A /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221DAD3122F444640007A19A /* Strings.swift */; };
 		221DAD3422F462B30007A19A /* CellViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221DAD3322F462B30007A19A /* CellViewModels.swift */; };
 		221DAD3622F467400007A19A /* HomeSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221DAD3522F467400007A19A /* HomeSectionModel.swift */; };
@@ -30,10 +30,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2214603E23A045C5005AFD60 /* CVModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVModel.swift; sourceTree = "<group>"; };
 		221DAD2822F4137B0007A19A /* StoryboardInitializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInitializable.swift; sourceTree = "<group>"; };
 		221DAD2A22F4242F0007A19A /* CVService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVService.swift; sourceTree = "<group>"; };
 		221DAD2C22F424F20007A19A /* SessionManager+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SessionManager+Observable.swift"; sourceTree = "<group>"; };
-		221DAD2E22F42DDF0007A19A /* CVModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVModel.swift; sourceTree = "<group>"; };
 		221DAD3122F444640007A19A /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		221DAD3322F462B30007A19A /* CellViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewModels.swift; sourceTree = "<group>"; };
 		221DAD3522F467400007A19A /* HomeSectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSectionModel.swift; sourceTree = "<group>"; };
@@ -121,7 +121,7 @@
 		2234C31C22F323AC00FB3DD2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				221DAD2E22F42DDF0007A19A /* CVModel.swift */,
+				2214603E23A045C5005AFD60 /* CVModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -291,30 +291,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VladimirZivanovCV/Pods-VladimirZivanovCV-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
-				"${BUILT_PRODUCTS_DIR}/Coordinator/Coordinator.framework",
-				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
-				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-VladimirZivanovCV/Pods-VladimirZivanovCV-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Coordinator.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-VladimirZivanovCV/Pods-VladimirZivanovCV-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -330,6 +311,7 @@
 			files = (
 				2234C32922F3279D00FB3DD2 /* HomeTableViewCells.swift in Sources */,
 				221DAD3222F444640007A19A /* Strings.swift in Sources */,
+				2214603F23A045C5005AFD60 /* CVModel.swift in Sources */,
 				2298715C230D6E9100671DDF /* APIRequestRetrier.swift in Sources */,
 				221DAD2922F4137B0007A19A /* StoryboardInitializable.swift in Sources */,
 				2234C30A22F301B400FB3DD2 /* AppDelegate.swift in Sources */,
@@ -338,7 +320,6 @@
 				221DAD2D22F424F20007A19A /* SessionManager+Observable.swift in Sources */,
 				2234C32322F3252B00FB3DD2 /* HomeViewModel.swift in Sources */,
 				2234C32B22F327C500FB3DD2 /* HomeTableHeaderView.swift in Sources */,
-				221DAD2F22F42DDF0007A19A /* CVModel.swift in Sources */,
 				221DAD3A22F46B390007A19A /* UITableView+Reusable.swift in Sources */,
 				221DAD3822F4688E0007A19A /* HomeSectionBuilder.swift in Sources */,
 				221DAD3422F462B30007A19A /* CellViewModels.swift in Sources */,

@@ -12,6 +12,7 @@ struct CVModel: Decodable {
     private enum CodingKeys: String, CodingKey {
         case name
         case title
+        case profileImageUrl = "imageUrl"
         case summary
         case contactInfo = "contact_info"
         case skills
@@ -21,6 +22,7 @@ struct CVModel: Decodable {
 
     let name: String
     let title: String
+    let profileImageUrl: String?
     let summary: String
     let contactInfo: ContactInfo
     let skills: Skills
