@@ -16,7 +16,7 @@ typealias ContactInfo = (phone: String, email: String)
 /// View model is injected into a view controller under a protocol.
 protocol HomeViewModelProtocol {
     /// Whether view should display a loading indicator
-//    var isLoading: Observable<Bool> { get }
+    var isLoading: Driver<Bool> { get }
 
     /// Whether view should display an error
     var apiError: PublishSubject<Void> { get }
@@ -26,6 +26,9 @@ protocol HomeViewModelProtocol {
 
     /// Candidate's job title
     var title: Driver<String?> { get }
+    
+    /// Candidate's profile picture
+    var profileImageUrl: Driver<URL?> { get }
 
     /// Candidate's contact info
     var contactInfo: Driver<ContactInfo?> { get }
@@ -49,6 +52,12 @@ final class HomeViewModel: HomeViewModelProtocol {
     private let cvBehaviorRelay = BehaviorRelay<CVModel?>(value: nil)
     private let isLoadingRelay = BehaviorRelay(value: false)
     private let disposeBag = DisposeBag()
+    
+    var isLoading: Driver<Bool> {
+        return isLoadingRelay.asObservable()
+            .distinctUntilChanged()
+            .asDriver(onErrorJustReturn: false)
+    }
 
     let apiError = PublishSubject<Void>()
 
@@ -58,6 +67,10 @@ final class HomeViewModel: HomeViewModelProtocol {
 
     var title: Driver<String?> {
         return cvBehaviorRelay.map { $0?.title }.asDriver(onErrorJustReturn: nil)
+    }
+    
+    var profileImageUrl: Driver<URL?> {
+        return cvBehaviorRelay.map { URL(string: $0?.profileImageUrl ?? "") }.asDriver(onErrorJustReturn: nil)
     }
 
     var contactInfo: Driver<ContactInfo?> {
@@ -85,14 +98,13 @@ final class HomeViewModel: HomeViewModelProtocol {
         }
         service.getCV()
             .subscribe(onNext: { [weak self] response in
-            guard let self = self else { return }
-            self.cvBehaviorRelay.accept(response.model)
-            self.isLoadingRelay.accept(false)
-            }, onError: { error in
+                guard let self = self else { return }
+                self.cvBehaviorRelay.accept(response.model)
                 self.isLoadingRelay.accept(false)
-                self.apiError.onNext(())
-        })
-            .disposed(by: disposeBag)
+                }, onError: { error in
+                    self.isLoadingRelay.accept(false)
+                    self.apiError.onNext(())
+            }).disposed(by: disposeBag)
     }
 
     func callPhone() {

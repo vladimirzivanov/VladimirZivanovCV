@@ -24,19 +24,19 @@ struct HomeSectionBuilder {
 
     private func makeSkillsSection() -> HomeSectionModel {
         var items: [HomeCellModelType] = []
-        items.append(.skill(SkillCellViewModel(title: Strings.areaOfExpertise, skills: model.skills.areaOfExpertise)))
-        items.append(.skill(SkillCellViewModel(title: Strings.toolsAndTechnologies, skills: model.skills.toolsAndTechnologies)))
-        items.append(.skill(SkillCellViewModel(title: Strings.other, skills: model.skills.other)))
+        items.append(.skill(SkillItemViewModel(title: Strings.areaOfExpertise, skills: model.skills.areaOfExpertise)))
+        items.append(.skill(SkillItemViewModel(title: Strings.toolsAndTechnologies, skills: model.skills.toolsAndTechnologies)))
+        items.append(.skill(SkillItemViewModel(title: Strings.other, skills: model.skills.other)))
         return HomeSectionModel(items: items, headerTitle: Strings.skillSectionTitle)
     }
 
     private func makeExperienceSection() -> HomeSectionModel {
-        let items = model.workExperience.map { HomeCellModelType.company(CompanyCellViewModel(company: $0)) }
+        let items = model.workExperience.map { HomeCellModelType.company(CompanyItemViewModel(company: $0)) }
         return HomeSectionModel(items: items, headerTitle: Strings.workExperienceSectionTitle)
     }
 
     private func makeEducationSection() -> HomeSectionModel {
-        let items = model.education.map { HomeCellModelType.education(EducationCellViewModel(education: $0)) }
+        let items = model.education.map { HomeCellModelType.education(EducationItemViewModel(education: $0)) }
         return HomeSectionModel(items: items, headerTitle: Strings.educationSectionTitle)
     }
 }

@@ -10,7 +10,6 @@ import Foundation
 import Alamofire
 import RxSwift
 
-/// Contains original response data and decoded model.
 struct DecodableResponse<Model: Decodable> {
     let data: Data
     let model: Model

@@ -10,6 +10,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 import RxDataSources
+import AlamofireImage
 
 final class HomeViewController: UIViewController, StoryboardInitializable {
 
@@ -42,8 +43,9 @@ private extension HomeViewController {
             self?.showError()
         }).disposed(by: disposeBag)
 
-//        viewModel.isLoading.bind(to: rx.showsActivityView)
-//            .disposed(by: disposeBag)
+        viewModel.isLoading
+            .drive(rx.showActivityLoaderView)
+            .disposed(by: disposeBag)
     }
 
     func setupContactInfoBindings() {
@@ -72,10 +74,15 @@ private extension HomeViewController {
         viewModel.name
             .drive(headerView.nameLabel.rx.text)
             .disposed(by: disposeBag)
-
+        
         viewModel.title
             .drive(headerView.titleLabel.rx.text)
             .disposed(by: disposeBag)
+        
+        viewModel.profileImageUrl.drive(onNext: { [weak self] url in
+            guard let url = url else { return }
+            self?.headerView.profileImageView.af_setImage(withURL: url)
+        }).disposed(by: disposeBag)
     }
 
     func setupTableViewBindings() {

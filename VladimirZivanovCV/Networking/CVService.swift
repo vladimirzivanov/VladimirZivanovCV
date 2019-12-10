@@ -19,7 +19,7 @@ protocol CVServiceProtocol {
 struct CVService: CVServiceProtocol {
 
     private enum Const {
-        static let cvURL = "https://gist.githubusercontent.com/vladimirzivanov/decc37cda7b6789f6915577200c3f101/raw/mycv.json"
+        static let cvURL = "https://gist.githubusercontent.com/vladimirzivanov/a06f4ea9718a76593368658260a23bc5/raw/myCV.json"
     }
 
     private let session: Session
