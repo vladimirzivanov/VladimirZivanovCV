@@ -29,15 +29,6 @@
             "role": "iOS Developer",
             "accomplishments": [
             ]
-        },
-        {
-            "company_name": "Execom",
-            "company_logo": "https://vojvodinaictcluster.org/wp-content/uploads/2013/10/Execom-logo-red-600x252.png",
-            "start_date": "Dec 2016",
-            "end_date": "Jul 2017",
-            "role": "Mobile Developer",
-            "accomplishments": [
-            ]
         }
     ],
     "education": [
@@ -46,13 +37,6 @@
             "start_year": 2007,
             "end_year": 2012,
             "school_name": "University of Novi Sad, Faculty of Technical Sciences",
-            "city": "Novi Sad"
-        },
-        {
-            "specialty": "Computer Science",
-            "start_year": 2003,
-            "end_year": 2007,
-            "school_name": "Electrotechnical School Mihajlo Pupin",
             "city": "Novi Sad"
         }
     ]

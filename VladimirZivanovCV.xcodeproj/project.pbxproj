@@ -27,7 +27,7 @@
 		2214607323A04848005AFD60 /* EducationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2214605923A04848005AFD60 /* EducationTableViewCell.swift */; };
 		2214607423A04848005AFD60 /* SkillTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2214605A23A04848005AFD60 /* SkillTableViewCell.swift */; };
 		2214607523A04848005AFD60 /* CVModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2214605C23A04848005AFD60 /* CVModel.swift */; };
-		2214608C23A048FC005AFD60 /* EducationItemViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2214608623A048FC005AFD60 /* EducationItemViewModelTests.swift */; };
+		2214608C23A048FC005AFD60 /* ViewModelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2214608623A048FC005AFD60 /* ViewModelsTests.swift */; };
 		2214608D23A048FC005AFD60 /* DataFromJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2214608823A048FC005AFD60 /* DataFromJSON.swift */; };
 		2214608E23A048FC005AFD60 /* incorrect_cv.json in Resources */ = {isa = PBXBuildFile; fileRef = 2214608A23A048FC005AFD60 /* incorrect_cv.json */; };
 		2214608F23A048FC005AFD60 /* correct_cv.json in Resources */ = {isa = PBXBuildFile; fileRef = 2214608B23A048FC005AFD60 /* correct_cv.json */; };
@@ -37,6 +37,8 @@
 		221DAD3222F444640007A19A /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221DAD3122F444640007A19A /* Strings.swift */; };
 		2234C30A22F301B400FB3DD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2234C30922F301B400FB3DD2 /* AppDelegate.swift */; };
 		2234C32D22F3321800FB3DD2 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2234C32C22F3321800FB3DD2 /* ApplicationCoordinator.swift */; };
+		2243E2EA23A0FEC200B5D412 /* CVModelDecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2243E2E923A0FEC200B5D412 /* CVModelDecodingTests.swift */; };
+		9831D377419AB07176875C65 /* Pods_VladimirZivanovCV_VladimirZivanovCVTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A22D4C797BE473594A051AB /* Pods_VladimirZivanovCV_VladimirZivanovCVTests.framework */; };
 		F391B145029D31B0E8A4B8EE /* Pods_VladimirZivanovCV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E13A6DF3E2B6843B9C3F30D0 /* Pods_VladimirZivanovCV.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A22D4C797BE473594A051AB /* Pods_VladimirZivanovCV_VladimirZivanovCVTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VladimirZivanovCV_VladimirZivanovCVTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D02E274C30A036983FD14EE /* Pods-VladimirZivanovCV-VladimirZivanovCVTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VladimirZivanovCV-VladimirZivanovCVTests.debug.xcconfig"; path = "Target Support Files/Pods-VladimirZivanovCV-VladimirZivanovCVTests/Pods-VladimirZivanovCV-VladimirZivanovCVTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2214604123A04848005AFD60 /* StoryboardInitializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardInitializable.swift; sourceTree = "<group>"; };
 		2214604323A04848005AFD60 /* UIViewController+LoadingIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+LoadingIndicator.swift"; sourceTree = "<group>"; };
 		2214604423A04848005AFD60 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
@@ -74,7 +78,7 @@
 		2214605C23A04848005AFD60 /* CVModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVModel.swift; sourceTree = "<group>"; };
 		2214607C23A048EB005AFD60 /* VladimirZivanovCVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VladimirZivanovCVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2214608023A048EB005AFD60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2214608623A048FC005AFD60 /* EducationItemViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EducationItemViewModelTests.swift; sourceTree = "<group>"; };
+		2214608623A048FC005AFD60 /* ViewModelsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelsTests.swift; sourceTree = "<group>"; };
 		2214608823A048FC005AFD60 /* DataFromJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataFromJSON.swift; sourceTree = "<group>"; };
 		2214608A23A048FC005AFD60 /* incorrect_cv.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = incorrect_cv.json; sourceTree = "<group>"; };
 		2214608B23A048FC005AFD60 /* correct_cv.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = correct_cv.json; sourceTree = "<group>"; };
@@ -85,7 +89,9 @@
 		2234C30622F301B400FB3DD2 /* VladimirZivanovCV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VladimirZivanovCV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2234C30922F301B400FB3DD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2234C32C22F3321800FB3DD2 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		2243E2E923A0FEC200B5D412 /* CVModelDecodingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVModelDecodingTests.swift; sourceTree = "<group>"; };
 		6C625D94302BF493C16016B0 /* Pods-VladimirZivanovCV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VladimirZivanovCV.release.xcconfig"; path = "Target Support Files/Pods-VladimirZivanovCV/Pods-VladimirZivanovCV.release.xcconfig"; sourceTree = "<group>"; };
+		9DBC8A24F60C8C4E0024378A /* Pods-VladimirZivanovCV-VladimirZivanovCVTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VladimirZivanovCV-VladimirZivanovCVTests.release.xcconfig"; path = "Target Support Files/Pods-VladimirZivanovCV-VladimirZivanovCVTests/Pods-VladimirZivanovCV-VladimirZivanovCVTests.release.xcconfig"; sourceTree = "<group>"; };
 		C3CFCBC0484BAB9E1269D9BF /* Pods-VladimirZivanovCV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VladimirZivanovCV.debug.xcconfig"; path = "Target Support Files/Pods-VladimirZivanovCV/Pods-VladimirZivanovCV.debug.xcconfig"; sourceTree = "<group>"; };
 		E13A6DF3E2B6843B9C3F30D0 /* Pods_VladimirZivanovCV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VladimirZivanovCV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -95,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9831D377419AB07176875C65 /* Pods_VladimirZivanovCV_VladimirZivanovCVTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,12 +165,12 @@
 		2214604C23A04848005AFD60 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				2214604D23A04848005AFD60 /* HomeViewModel.swift */,
 				2214604E23A04848005AFD60 /* HomeSectionModel.swift */,
-				2214604F23A04848005AFD60 /* EducationItemViewModel.swift */,
+				2214604D23A04848005AFD60 /* HomeViewModel.swift */,
 				2214605023A04848005AFD60 /* SkillItemViewModel.swift */,
-				2214605123A04848005AFD60 /* HomeSectionBuilder.swift */,
 				2214605223A04848005AFD60 /* CompanyItemViewModel.swift */,
+				2214604F23A04848005AFD60 /* EducationItemViewModel.swift */,
+				2214605123A04848005AFD60 /* HomeSectionBuilder.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -204,7 +211,8 @@
 		2214607D23A048EB005AFD60 /* VladimirZivanovCVTests */ = {
 			isa = PBXGroup;
 			children = (
-				2214608623A048FC005AFD60 /* EducationItemViewModelTests.swift */,
+				2214608623A048FC005AFD60 /* ViewModelsTests.swift */,
+				2243E2E923A0FEC200B5D412 /* CVModelDecodingTests.swift */,
 				2214608723A048FC005AFD60 /* Helpers */,
 				2214608923A048FC005AFD60 /* Resources */,
 				2214608023A048EB005AFD60 /* Info.plist */,
@@ -269,6 +277,8 @@
 			children = (
 				C3CFCBC0484BAB9E1269D9BF /* Pods-VladimirZivanovCV.debug.xcconfig */,
 				6C625D94302BF493C16016B0 /* Pods-VladimirZivanovCV.release.xcconfig */,
+				0D02E274C30A036983FD14EE /* Pods-VladimirZivanovCV-VladimirZivanovCVTests.debug.xcconfig */,
+				9DBC8A24F60C8C4E0024378A /* Pods-VladimirZivanovCV-VladimirZivanovCVTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -277,6 +287,7 @@
 			isa = PBXGroup;
 			children = (
 				E13A6DF3E2B6843B9C3F30D0 /* Pods_VladimirZivanovCV.framework */,
+				0A22D4C797BE473594A051AB /* Pods_VladimirZivanovCV_VladimirZivanovCVTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -288,9 +299,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2214608323A048EB005AFD60 /* Build configuration list for PBXNativeTarget "VladimirZivanovCVTests" */;
 			buildPhases = (
+				1D7D58666BE9061926F64203 /* [CP] Check Pods Manifest.lock */,
 				2214607823A048EB005AFD60 /* Sources */,
 				2214607923A048EB005AFD60 /* Frameworks */,
 				2214607A23A048EB005AFD60 /* Resources */,
+				A811732A491607B477338FF8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -382,6 +395,45 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1D7D58666BE9061926F64203 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VladimirZivanovCV-VladimirZivanovCVTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A811732A491607B477338FF8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VladimirZivanovCV-VladimirZivanovCVTests/Pods-VladimirZivanovCV-VladimirZivanovCVTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VladimirZivanovCV-VladimirZivanovCVTests/Pods-VladimirZivanovCV-VladimirZivanovCVTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VladimirZivanovCV-VladimirZivanovCVTests/Pods-VladimirZivanovCV-VladimirZivanovCVTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		BB8DE6975E47A684A6A31E9D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -428,7 +480,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2214608C23A048FC005AFD60 /* EducationItemViewModelTests.swift in Sources */,
+				2243E2EA23A0FEC200B5D412 /* CVModelDecodingTests.swift in Sources */,
+				2214608C23A048FC005AFD60 /* ViewModelsTests.swift in Sources */,
 				2214608D23A048FC005AFD60 /* DataFromJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,6 +529,7 @@
 /* Begin XCBuildConfiguration section */
 		2214608423A048EB005AFD60 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D02E274C30A036983FD14EE /* Pods-VladimirZivanovCV-VladimirZivanovCVTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -497,6 +551,7 @@
 		};
 		2214608523A048EB005AFD60 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DBC8A24F60C8C4E0024378A /* Pods-VladimirZivanovCV-VladimirZivanovCVTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;

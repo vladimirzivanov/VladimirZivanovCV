@@ -13,4 +13,9 @@ target 'VladimirZivanovCV' do
   pod 'Alamofire', '~> 5.0.0-beta.6'
   pod 'AlamofireImage', '~> 4.0.0-beta.3'
 
+  target 'VladimirZivanovCVTests' do
+    pod 'Nimble'
+    pod 'Quick'
+  end
+
 end
