@@ -28,7 +28,6 @@
 		2214607423A04848005AFD60 /* SkillTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2214605A23A04848005AFD60 /* SkillTableViewCell.swift */; };
 		2214607523A04848005AFD60 /* CVModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2214605C23A04848005AFD60 /* CVModel.swift */; };
 		2214608C23A048FC005AFD60 /* ViewModelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2214608623A048FC005AFD60 /* ViewModelsTests.swift */; };
-		2214608D23A048FC005AFD60 /* DataFromJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2214608823A048FC005AFD60 /* DataFromJSON.swift */; };
 		2214608E23A048FC005AFD60 /* incorrect_cv.json in Resources */ = {isa = PBXBuildFile; fileRef = 2214608A23A048FC005AFD60 /* incorrect_cv.json */; };
 		2214608F23A048FC005AFD60 /* correct_cv.json in Resources */ = {isa = PBXBuildFile; fileRef = 2214608B23A048FC005AFD60 /* correct_cv.json */; };
 		2214609D23A05035005AFD60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2214609C23A05035005AFD60 /* Assets.xcassets */; };
@@ -79,7 +78,6 @@
 		2214607C23A048EB005AFD60 /* VladimirZivanovCVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VladimirZivanovCVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2214608023A048EB005AFD60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2214608623A048FC005AFD60 /* ViewModelsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelsTests.swift; sourceTree = "<group>"; };
-		2214608823A048FC005AFD60 /* DataFromJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataFromJSON.swift; sourceTree = "<group>"; };
 		2214608A23A048FC005AFD60 /* incorrect_cv.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = incorrect_cv.json; sourceTree = "<group>"; };
 		2214608B23A048FC005AFD60 /* correct_cv.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = correct_cv.json; sourceTree = "<group>"; };
 		2214609C23A05035005AFD60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = VladimirZivanovCV/Assets.xcassets; sourceTree = SOURCE_ROOT; };
@@ -213,19 +211,10 @@
 			children = (
 				2214608623A048FC005AFD60 /* ViewModelsTests.swift */,
 				2243E2E923A0FEC200B5D412 /* CVModelDecodingTests.swift */,
-				2214608723A048FC005AFD60 /* Helpers */,
 				2214608923A048FC005AFD60 /* Resources */,
 				2214608023A048EB005AFD60 /* Info.plist */,
 			);
 			path = VladimirZivanovCVTests;
-			sourceTree = "<group>";
-		};
-		2214608723A048FC005AFD60 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				2214608823A048FC005AFD60 /* DataFromJSON.swift */,
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 		2214608923A048FC005AFD60 /* Resources */ = {
@@ -482,7 +471,6 @@
 			files = (
 				2243E2EA23A0FEC200B5D412 /* CVModelDecodingTests.swift in Sources */,
 				2214608C23A048FC005AFD60 /* ViewModelsTests.swift in Sources */,
-				2214608D23A048FC005AFD60 /* DataFromJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

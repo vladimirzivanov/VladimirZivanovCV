@@ -129,3 +129,10 @@ private class ServiceMock: CVServiceProtocol {
         return Observable.just(DecodableResponse(data: data, model: model))
     }
 }
+
+func dataFromJSON(withName name: String) -> Data? {
+    guard let fileURL = Bundle(for: ViewModelsTests.self).url(forResource: name, withExtension: "json") else {
+        return nil
+    }
+    return try? Data(contentsOf: fileURL)
+}
